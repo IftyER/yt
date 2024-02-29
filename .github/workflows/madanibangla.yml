@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: T Sports
+name: Madani Bangla
 
 # Controls when the action will run. 
 on:
@@ -41,8 +41,8 @@ jobs:
       - name: Main
         run: |
           pwd
-          chmod +x tsports.sh
-          ./tsports.sh
+          chmod +x madanibangla.sh
+          ./madanibangla.sh
         
       - name: git add
         run: |
