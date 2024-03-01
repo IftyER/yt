@@ -28,7 +28,7 @@ def grab(url):
         if 'https://' in response[end-tuner : end]:
             link = response[end-tuner : end]
             start = link.find('https://')
-            end = link.find('.mp4') + 5
+            end = link.find('.m3u8') + 5
             break
         else:
             tuner += 5
@@ -42,7 +42,7 @@ print('#EXTM3U')
 print('#EXT-X-VERSION:3')
 print('#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000')
 s = requests.Session()
-with open('../nosignal.txt') as f:
+with open('../geonews.txt') as f:
     for line in f:
         line = line.strip()
         if not line or line.startswith('~~'):
