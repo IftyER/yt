@@ -1,1 +1,1 @@
-[![Playlist](https://github.com/IftyER/yt/actions/workflows/saudisunnah.yml/badge.svg)](https://github.com/IftyER/yt/)
+[![Playlist](https://github.com/IftyER/yt/badge.svg)](https://github.com/IftyER/yt/)
