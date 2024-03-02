@@ -1,1 +1,6 @@
+~~ DO NOT EDIT THE FIRST 2 LINES	
+~~ FORMAT: <channel name> | <group name> | <logo> | <tvg-id>
+
+
+Star Wars Kids | | |
 https://www.youtube.com/@StarWarsKids/live
