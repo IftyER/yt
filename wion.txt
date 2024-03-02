@@ -1,1 +1,6 @@
+~~ DO NOT EDIT THE FIRST 2 LINES	
+~~ FORMAT: <channel name> | <group name> | <logo> | <tvg-id>
+
+
+Wion | | |
 https://www.youtube.com/live/gadjsB5BkK4?si=ghCFo2jzz48Q37jx
