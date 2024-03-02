@@ -51,5 +51,5 @@ jobs:
           
       - name: commit & push
         run: |
-          git commit -m "Link updated"
+          git commit -m "Auto updated by git police 👮"
           git push
