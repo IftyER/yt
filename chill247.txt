@@ -1,1 +1,6 @@
+~~ DO NOT EDIT THE FIRST 2 LINES	
+~~ FORMAT: <channel name> | <group name> | <logo> | <tvg-id>
+
+
+Chill 247 | | |
 https://www.youtube.com/live/yqrnhrkA7ik?si=GULIED9gR4_0bKLp
