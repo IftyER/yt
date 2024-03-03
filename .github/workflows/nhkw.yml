@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: NHK World
+name: Net Geo Wild
 # Controls when the action will run. 
 on:
   schedule:
