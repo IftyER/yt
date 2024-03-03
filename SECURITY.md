@@ -4,7 +4,7 @@
 
 
 
-|   Question     |       ANS          |
+|   Question     |       Answer          |
 | ------- | ------------------ |
 | Open-source   | :white_check_mark: |
 | Copyright   | :x:                |
