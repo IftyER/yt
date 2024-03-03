@@ -2,5 +2,5 @@
 ~~ FORMAT: <channel name> | <group name> | <logo> | <tvg-id>
 
 
-TRVL | | |
-https://www.youtube.com/@ekhontv/live
+N | | |
+https://www.youtube.com/@NatGeo/live
