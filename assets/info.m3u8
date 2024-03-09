@@ -2,8 +2,6 @@
 #EXT-X-VERSION:3
 #EXT-X-TARGETDURATION:20
 #EXT-X-MEDIA-SEQUENCE:0
-#EXTINF:10.000000,
-test.ts
-#EXTINF:10.000000,
-test.ts
+#EXTINF:20.000000,
+https://video.twimg.com/ext_tw_video/1766489101535260672/pu/pl/JQ6Dqe7CakAPOolN.m3u8?variant_version=1&tag=12&container=cmaf
 #EXT-X-ENDLIST
