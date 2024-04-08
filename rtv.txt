@@ -2,5 +2,5 @@
 ~~ FORMAT: <channel name> | <group name> | <logo> | <tvg-id>
 
 
-Channel 24 | | |
-https://www.youtube.com/@jagonews24/live
+RTV | | |
+https://www.youtube.com/@RtvNews/live
