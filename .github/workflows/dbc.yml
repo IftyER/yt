@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: One World Radio - Daybreak Sessions Channel
+name: DBC News
 
 # Controls when the action will run. 
 on:
@@ -41,8 +41,8 @@ jobs:
       - name: Main
         run: |
           pwd
-          chmod +x shaf.sh
-          ./shaf.sh
+          chmod +x dbc.sh
+          ./dbc.sh
         
       - name: git add
         run: |
