@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: News 24
+name: Somoy TV
 
 # Controls when the action will run. 
 on:
@@ -41,8 +41,8 @@ jobs:
       - name: Main
         run: |
           pwd
-          chmod +x nw24.sh
-          ./nw24.sh
+          chmod +x somoy.sh
+          ./somoy.sh
         
       - name: git add
         run: |
