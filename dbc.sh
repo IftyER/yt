@@ -6,6 +6,6 @@ python3 -m pip install requests
 
 cd $(dirname $0)/scripts/
 
-python3 shaf.py > ../shaf.m3u8
+python3 dbc.py > ../dbc.m3u8
 
 echo m3u8 grabbed
