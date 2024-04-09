@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: FGN
+name: BanglaVision
 
 # Controls when the action will run. 
 on:
@@ -41,8 +41,8 @@ jobs:
       - name: Main
         run: |
           pwd
-          chmod +x fgn.sh
-          ./fgn.sh
+          chmod +x bv.sh
+          ./bv.sh
         
       - name: git add
         run: |
