@@ -6,6 +6,6 @@ python3 -m pip install requests
 
 cd $(dirname $0)/scripts/
 
-python3 starwarskids.py > ../starwarskids.m3u8
+python3 jamunatv.py > ../jamunatv.m3u8
 
 echo m3u8 grabbed
