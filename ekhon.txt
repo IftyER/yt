@@ -2,5 +2,5 @@
 ~~ FORMAT: <channel name> | <group name> | <logo> | <tvg-id>
 
 
-PTA World | | |
-https://www.youtube.com/@PTVWorldOfficial/live
+Ekhon TV | | |
+https://www.youtube.com/@ekhontv/live
