@@ -2,5 +2,5 @@
 ~~ FORMAT: <channel name> | <group name> | <logo> | <tvg-id>
 
 
-FGN | | | |
-https://www.youtube.com/@fgnchannelofficial/live
+BanglaVision| | | |
+https://www.youtube.com/@banglavisionlive/live
