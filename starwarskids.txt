@@ -2,5 +2,5 @@
 ~~ FORMAT: <channel name> | <group name> | <logo> | <tvg-id>
 
 
-Euro News | | |
-https://www.youtube.com/@euronews/live/
+Jamuna TV | | |
+https://www.youtube.com/@JamunaTVbd/live/
