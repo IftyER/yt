@@ -2,5 +2,5 @@
 ~~ FORMAT: <channel name> | <group name> | <logo> | <tvg-id>
 
 
-News 24 | | |
-https://www.youtube.com/@dailynews24x7daily/live
+Somoy TV | | |
+https://www.youtube.com/@somoynews360/live
