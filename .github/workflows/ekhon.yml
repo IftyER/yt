@@ -37,6 +37,10 @@ jobs:
         run: |
           git pull origin main
 
+      - name: Check if there are changes
+        run: |
+          git diff --exit-code || echo "Changes detected"
+        
       - name: Commit and Push Changes
         run: |
           git add -A
