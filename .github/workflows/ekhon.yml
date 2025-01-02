@@ -25,7 +25,7 @@ jobs:
         run: |
           sudo apt update
           sudo apt install -y python3 python3-pip
-          pip install yt-dlp
+          pip install yt-dlp beautifulsoup4
 
       - name: Extract M3U8 URLs
         run: |
@@ -37,13 +37,8 @@ jobs:
         run: |
           git pull origin main
 
-      - name: Check if there are changes
-        run: |
-          git diff --exit-code || echo "Changes detected"
-        
       - name: Commit and Push Changes
         run: |
           git add -A
           git commit -m "Updated M3U8 links" || echo "No changes to commit"
           git push origin main
-
