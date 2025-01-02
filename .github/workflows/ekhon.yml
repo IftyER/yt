@@ -33,8 +33,13 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Pull Latest Changes to Avoid Push Rejection
+        run: |
+          git pull origin main
+
       - name: Commit and Push Changes
         run: |
           git add -A
-          git commit -m "Updated M3U8 links"
-          git push
+          git commit -m "Updated M3U8 links" || echo "No changes to commit"
+          git push origin main
+
