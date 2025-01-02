@@ -1,30 +1,32 @@
-import requests
-from bs4 import BeautifulSoup
+import yt_dlp
 
-def extract_video_id(url):
-    """Extract the video ID from a YouTube live stream URL."""
-    if "youtube.com" in url:
-        # Look for the "v=" parameter in the URL to extract the video ID
-        video_id = url.split("v=")[-1].split("&")[0]
-        return video_id
+def extract_m3u8_url(youtube_url):
+    """Use yt-dlp to extract the M3U8 URL from a YouTube live stream URL."""
+    ydl_opts = {
+        'quiet': True, 
+        'format': 'best', 
+        'noplaylist': True, 
+        'extract_flat': True
+    }
+    
+    with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+        info_dict = ydl.extract_info(youtube_url, download=False)
+        if 'formats' in info_dict:
+            for format_info in info_dict['formats']:
+                if 'm3u8' in format_info['url']:
+                    return format_info['url']
     return None
-
-def get_m3u8_url(video_id):
-    """Generate a valid m3u8 URL for a YouTube live stream."""
-    m3u8_url = f"https://www.youtube.com/watch?v={video_id}"
-    return m3u8_url
 
 def generate_m3u_playlist(urls):
     """Generate an M3U playlist from a list of YouTube live URLs."""
     m3u_playlist = "#EXTM3U\n"
     
     for index, url in enumerate(urls, 1):
-        video_id = extract_video_id(url)
-        if video_id:
-            m3u8_url = get_m3u8_url(video_id)
+        m3u8_url = extract_m3u8_url(url)
+        if m3u8_url:
             m3u_playlist += f"#EXTINF:-1,Stream {index} - {url}\n{m3u8_url}\n"
         else:
-            print(f"Error: Invalid YouTube URL {url}")
+            print(f"Error: Could not extract M3U8 URL from {url}")
     
     return m3u_playlist
 
