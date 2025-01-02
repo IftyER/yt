@@ -1,21 +1,26 @@
 import yt_dlp
 
-def extract_m3u8_url(youtube_url):
-    """Use yt-dlp to extract the M3U8 URL from a YouTube live stream URL."""
-    ydl_opts = {
-        'quiet': True, 
-        'format': 'best', 
-        'noplaylist': True, 
-        'extract_flat': True
-    }
-    
-    with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-        info_dict = ydl.extract_info(youtube_url, download=False)
-        if 'formats' in info_dict:
-            for format_info in info_dict['formats']:
-                if 'm3u8' in format_info['url']:
-                    return format_info['url']
-    return None
+def extract_m3u8_url(url):
+    """Extract M3U8 URL for a YouTube live stream."""
+    try:
+        ydl_opts = {
+            'quiet': True,
+            'format': 'best',
+            'noplaylist': True,
+            'extractor_args': {
+                'youtube': {
+                    'live': True
+                }
+            }
+        }
+
+        with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+            info_dict = ydl.extract_info(url, download=False)
+            m3u8_url = info_dict.get('url', None)
+            return m3u8_url
+    except Exception as e:
+        print(f"Error: Could not extract M3U8 URL from {url}. Reason: {e}")
+        return None
 
 def generate_m3u_playlist(urls):
     """Generate an M3U playlist from a list of YouTube live URLs."""
@@ -26,7 +31,7 @@ def generate_m3u_playlist(urls):
         if m3u8_url:
             m3u_playlist += f"#EXTINF:-1,Stream {index} - {url}\n{m3u8_url}\n"
         else:
-            print(f"Error: Could not extract M3U8 URL from {url}")
+            print(f"Error: Invalid YouTube URL {url}")
     
     return m3u_playlist
 
